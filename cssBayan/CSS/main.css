@@ -30,7 +30,7 @@ body {
     height: 100%;
 }
 input:checked~label >.meme-img {
-    height: 40vh;
+    height: 30vh;
     transition: .5s;
 }
 .meme-name {
@@ -51,7 +51,9 @@ input:checked~label>span {
     transform: rotate(45deg);
 }
 .meme-img {
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
     height: 0;
     transition: .5s;
     cursor: pointer;
@@ -104,6 +106,9 @@ input:checked~label>span {
     }
     .meme-name {
         font-size: 1.5em;
+    }
+    input:checked~label >.meme-img {
+        height: 50vh;
     }
 }
 
