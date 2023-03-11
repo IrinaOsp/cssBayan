@@ -93,3 +93,46 @@ input:checked~label>span {
 #img-10 {
     background: url(../assets/img/10_crossCheck.png) no-repeat center / contain;
 }
+
+/*media for tablets*/
+@media screen and (min-width: 820px) {
+    .wrapper {
+        width: 80%;
+    }
+        .title {
+        font-size: 2.5em;
+    }
+    .meme-name {
+        font-size: 1.5em;
+    }
+}
+
+/*media for desktop*/
+@media screen and (min-width: 1920px) {
+    .wrapper {
+        width: 60%;
+    }
+    .title {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 3em;
+    }
+    .meme-name {
+        font-size: 1.5em;
+        color: blue;
+    }
+    input:checked~.meme-name {
+        color: black;
+    }
+    .meme-container:hover>label>span {
+        transform: rotate(45deg);
+        transition: .4s;
+    }
+    main:hover>.meme-container>.meme-name {
+        color: black;
+        transition: .4s;
+    }
+    .meme-container:hover>.meme-label>.meme-img {
+        height: 40vh;
+    }
+}
