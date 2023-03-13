@@ -62,7 +62,7 @@ input:checked~label>span {
     filter: drop-shadow(.2em .2em 0 orange)
 }
 .meme-container:active .meme-label>.meme-img {
-    filter: drop-shadow(16px 16px 20px orange);
+    filter: drop-shadow(.6em .6em .6em orange);
     transition: .4s;
 }
 #img-1 {
