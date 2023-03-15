@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Rowdies';
+    src: url(../assets/fonts/Rowdies-Bold.ttf);
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Rowdies';
+    font-weight: 700;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f3f2e2;
+}
+.wrapper {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title {
+    font-size: 1.5em;
+}
+.meme-container {
+    text-align: center;
+}
+.meme-line {
+    border-top: .05em solid rgb(213, 213, 213);
+}
+.meme-container input {
+    display: none;
+    height: 100%;
+}
+input:checked~label >.meme-img {
+    height: 30vh;
+    transition: .5s;
+}
+.meme-name {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    text-align: left;
+    cursor: pointer;
+}
+span {
+    height: 1em;
+    width: 1em;
+    background: url(../assets/icons/plus-solid.svg) no-repeat;
+}
+input:checked~label>span {
+    transform: rotate(45deg);
+}
+.meme-img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    height: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+.meme-container:active>.meme-name {
+    filter: drop-shadow(.2em .2em 0 orange)
+}
+.meme-container:active .meme-label>.meme-img {
+    filter: drop-shadow(.6em .6em .6em orange);
+    transition: .4s;
+}
+#img-1 {
+    background: url(../assets/img/1_waiting.png) no-repeat center / contain;
+}
+#img-2 {
+    background: url(../assets/img/2_reading.png) no-repeat center / contain;
+}
+#img-3 {
+    background: url(../assets/img/3_noJS.png) no-repeat center / contain;
+}
+#img-4 {
+    background: url(../assets/img/4_acceptance.png) no-repeat center / contain;
+}
+#img-5 {
+    background: url(../assets/img/5_planning.png) no-repeat center / contain;
+}
+#img-6 {
+    background: url(../assets/img/6_missJS.png) no-repeat center / contain;
+}
+#img-7 {
+    background: url(../assets/img/7_submit.png) no-repeat center / contain;
+}
+#img-8 {
+    background: url(../assets/img/8_finished.png) no-repeat center / contain;
+}
+#img-9 {
+    background: url(../assets/img/9_rest.png) no-repeat center / contain;
+}
+#img-10 {
+    background: url(../assets/img/10_crossCheck.png) no-repeat center / contain;
+}
+
+/*media for tablets*/
+@media screen and (min-width: 820px) {
+    .wrapper {
+        width: 80%;
+    }
+        .title {
+        font-size: 2.5em;
+    }
+    .meme-name {
+        font-size: 1.5em;
+    }
+    input:checked~label >.meme-img {
+        height: 50vh;
+    }
+}
+
+/*media for desktop*/
+@media screen and (min-width: 900px) {
+    .wrapper {
+        width: 60%;
+    }
+    .title {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 3em;
+    }
+    .meme-name {
+        font-size: 1.5em;
+        color: blue;
+    }
+    input:checked~.meme-name {
+        color: black;
+    }
+    .meme-container span {
+        display: none;
+    }
+    input:checked~label >.meme-img {
+        height: 40vh;
+    }
+
+}
+/*media for hover*/
+@media (hover:hover) {
+    .meme-container:hover>label>span {
+        transform: rotate(45deg);
+        transition: .4s;
+    }
+    main:hover>.meme-container>.meme-name {
+        color: black;
+        transition: .4s;
+    }
+    .meme-container:hover>.meme-label>.meme-img {
+        height: 40vh;
+    }
+    .main:hover span {
+        display: block;
+    }
+}
