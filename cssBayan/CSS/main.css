@@ -132,10 +132,6 @@ input:checked~label>span {
     .meme-container span {
         display: none;
     }
-    .main:hover span {
-        display: block;
-    }
-   
     input:checked~label >.meme-img {
         height: 40vh;
     }
@@ -153,5 +149,8 @@ input:checked~label>span {
     }
     .meme-container:hover>.meme-label>.meme-img {
         height: 40vh;
+    }
+    .main:hover span {
+        display: block;
     }
 }
