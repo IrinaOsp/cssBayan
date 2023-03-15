@@ -135,6 +135,14 @@ input:checked~label>span {
     .main:hover span {
         display: block;
     }
+   
+    input:checked~label >.meme-img {
+        height: 40vh;
+    }
+
+}
+/*media for hover*/
+@media (hover:hover) {
     .meme-container:hover>label>span {
         transform: rotate(45deg);
         transition: .4s;
@@ -142,9 +150,6 @@ input:checked~label>span {
     main:hover>.meme-container>.meme-name {
         color: black;
         transition: .4s;
-    }
-    input:checked~label >.meme-img {
-        height: 40vh;
     }
     .meme-container:hover>.meme-label>.meme-img {
         height: 40vh;
